@@ -1,0 +1,66 @@
+.cg-container {
+  font: 13px/18px Helvetica, Arial, sans-serif;
+  color: black;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  box-shadow: 3px 0 4px rgba(0,0,0,.2);
+  z-index: 20000;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.cg-container .cg-title {
+  font-weight: bold;
+  font-size: 17px;
+  color: black;
+  padding: 20px;
+}
+
+.cg-container .cg-block {
+  padding: 15px 20px 0 20px;
+}
+
+.cg-container .cg-caption {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.cg-container .cg-field {
+  height: 25px;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 3px;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.cg-container .cg-project {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.cg-container .cg-project-select {
+  height: 30px;
+  width: 100%;
+}
+
+.cg-container .cg-save {
+  background-color: #FF6666;
+  font-weight: bold;
+  color: white;
+  height: 35px;
+  border-radius: 3px;
+  border: 0;
+  margin: 20px 20px 30px 20px;
+  width: calc(100% - 40px);
+}
+
+.cg-panel-enabled #body,
+.cg-panel-enabled .primary,
+.cg-panel-enabled .wrapper {
+  padding-left: 220px
+}

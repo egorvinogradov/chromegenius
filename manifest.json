@@ -1,0 +1,47 @@
+{
+  "background": {
+    "scripts": [
+      "js/libs/jquery-2.1.1.min.js",
+      "js/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "css": [
+        "css/content.css"
+      ],
+      "js": [
+        "js/libs/jquery-2.1.1.min.js",
+        "js/libs/underscore-min.js",
+        "js/content.js"
+      ],
+      "matches": [
+        "*://*.linkedin.com/*"
+      ]
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "homepage_url": "https://leadgenius.com",
+  "icons": {
+    "128": "img/icon-128.png",
+    "48": "img/icon-48.png",
+    "16": "img/icon-16.png"
+  },
+  "manifest_version": 2,
+  "name": "ChromeGenius",
+  "description": "Extension that helps quickly put Linkedin profile data into OverDrive",
+  "permissions": [
+    "tabs",
+    "storage",
+    "cookies",
+    "nativeMessaging",
+    "*://*.leadgenius.com/*",
+    "*://leadgenius.com/",
+      "*://localhost/*",
+      "*://localhost/"
+    ],
+  "version": "0.9.1",
+  "web_accessible_resources": [
+    "img/*"
+  ]
+}
